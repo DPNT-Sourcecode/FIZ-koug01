@@ -23,8 +23,13 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void fizzBuzzMultipleOfFifteen() {
-        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(30));
+    public void fizzBuzzMultipleOfThreeAndAllValuesEqual() {
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
+    }
+
+    @Test
+    public void fizzBuzzMultipleOfThreeAndContainsFiveAndAllValuesEqual() {
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(555));
     }
 
     @Test
