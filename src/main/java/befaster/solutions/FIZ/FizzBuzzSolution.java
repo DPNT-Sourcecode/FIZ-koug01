@@ -22,8 +22,14 @@ public class FizzBuzzSolution {
                 }
             }
             if (isIdentical) {
-                returnValue = returnValue + "deluxe";
+                if (number %2 ==0) {
+                    returnValue = returnValue + "deluxe";
+                }
+                else {
+                    returnValue = returnValue+ "fake deluxe";
+                }
             }
+
         }
         return returnValue.trim().equals("") ? value: returnValue.trim();
 

@@ -29,7 +29,17 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void fizzBuzzMultipleOfThreeAndContainsFiveAndAllValuesEqual() {
-        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(555));
+        assertEquals("fizz buzz fake deluxe", fizzBuzzSolution.fizzBuzz(555));
+    }
+
+    @Test
+    public void fizzBuzzMultipleOfThreeAllValuesEqualEven() {
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(222));
+    }
+
+    @Test
+    public void fizzBuzzMultipleOfThreeAllValuesEqualOdd() {
+        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(333));
     }
 
     @Test
