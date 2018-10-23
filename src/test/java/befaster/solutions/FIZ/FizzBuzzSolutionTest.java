@@ -14,12 +14,12 @@ public class FizzBuzzSolutionTest {
     }
     @Test
     public void fizzBuzzMultipleOfThree() {
-        assertEquals("fizz", fizzBuzzSolution.fizzBuzz(3));
+        assertEquals("fizz", fizzBuzzSolution.fizzBuzz(13));
     }
 
     @Test
     public void fizzBuzzMultipleOfFive() {
-        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(5));
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(51));
     }
 
     @Test
