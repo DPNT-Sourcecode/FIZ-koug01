@@ -6,16 +6,16 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         String value = String.valueOf(number);
-        if (number %15 == 0 || (value.contains("3") && value.contains("5"))) {
-            return "fizz buzz";
-        }
+        String returnValue = "";
         if (number % 3 == 0 || value.contains("3")) {
-            return "fizz";
+            returnValue= "fizz ";
         }
         if (number % 5 == 0 || value.contains("5")) {
-            return "buzz";
+            returnValue=  returnValue + "buzz";
         }
-        return String.valueOf(number);
+
+        return returnValue.trim().equals("") ? value: returnValue;
+
     }
 
 }
