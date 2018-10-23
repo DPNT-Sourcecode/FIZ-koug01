@@ -14,7 +14,7 @@ public class FizzBuzzSolution {
             returnValue=  returnValue + "buzz";
         }
 
-        return returnValue.trim().equals("") ? value: returnValue;
+        return returnValue.trim().equals("") ? value: returnValue.trim();
 
     }
 
