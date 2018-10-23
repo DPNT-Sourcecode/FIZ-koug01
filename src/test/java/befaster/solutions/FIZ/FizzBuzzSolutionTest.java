@@ -19,7 +19,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void fizzBuzzMultipleOfFive() {
-        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(51));
+        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(51));
     }
 
     @Test
