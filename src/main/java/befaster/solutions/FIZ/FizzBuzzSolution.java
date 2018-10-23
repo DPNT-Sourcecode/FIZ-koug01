@@ -11,26 +11,17 @@ public class FizzBuzzSolution {
             returnValue= "fizz ";
         }
         if (number % 5 == 0 || value.contains("5")) {
-            returnValue=  returnValue + "buzz ";
+            returnValue+= "buzz ";
         }
-        if (number > 10) {
-            boolean isIdentical = true;
-            for (int i = 1; i < value.length(); i++) {
-                if (value.charAt(i) != value.charAt(0)) {
-                    isIdentical = false;
-                    break;
-                }
+
+        if ((number % 3 == 0 && value.contains("3") || (number %5 ==0 && value.contains("5")))) {
+            if (number%2 != 0) {
+                returnValue += "fake ";
             }
-            if (isIdentical) {
-                if (number %2 ==0) {
-                    returnValue = returnValue + "deluxe";
-                }
-                else {
-                    returnValue = returnValue+ "fake deluxe";
-                }
-            }
+            returnValue +=  "deluxe";
 
         }
+
         return returnValue.trim().equals("") ? value: returnValue.trim();
 
     }
