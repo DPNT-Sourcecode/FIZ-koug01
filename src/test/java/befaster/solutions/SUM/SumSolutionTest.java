@@ -19,4 +19,24 @@ public class SumSolutionTest {
     public void compute_sum() {
         assertThat(sum.compute(1, 1), equalTo(2));
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void compute_sum_illegal_args_first_arg() {
+        sum.compute(-1, 1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void compute_sum_illegal_args_second_arg() {
+        sum.compute(1, -1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void compute_sum_illegal_args_arg1_exceed_bounds() {
+        sum.compute(101, 1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void compute_sum_illegal_args_arg2_exceed_bounds() {
+        sum.compute(1, 101);
+    }
 }
